@@ -1,0 +1,143 @@
+﻿@model EmployeeForm.Models.EmployeeAndCollection
+
+@{
+    ViewData["Title"] = "AddEmployee";
+}
+
+<h1>AddEmployee</h1>
+
+<h4>EmployeeAndCollection</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddEmployee">
+            @Html.HiddenFor(m => m.empid)
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="age" class="control-label"></label>
+                <input asp-for="age" class="form-control" />
+                <span asp-validation-for="age" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="country" class="control-label"></label>
+                
+                <select asp-for="country" class="form-control" asp-items="@(new SelectList(Model.lstcountry, "countryid", "countryname"))" onchange="BindState()">
+                    <option value="0">--Select--</option>
+                </select>
+
+                <span asp-validation-for="country" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="state" class="control-label"></label>
+                
+                <select asp-for="state" class="form-control" asp-items="@(new SelectList(Model.lststate, "stateid", "statename"))" onchange="BindCity()">
+                    <option value="0">--Select--</option>
+                </select>
+
+                <span asp-validation-for="state" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="city" class="control-label"></label>
+                
+                <select asp-for="city" class="form-control" asp-items="@(new SelectList(Model.lstcity, "cityid", "cityname"))">
+                    <option value="0">--Select--</option>
+                </select>
+
+                <span asp-validation-for="city" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="gender" class="control-label"></label>
+                
+                @foreach (var a in Model.lstgender)
+                {
+                    <input type="radio" asp-for="gender" value="@a.genderid" /> 
+                    @a.gendername
+                }
+
+                <span asp-validation-for="gender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="hobbies" class="control-label"></label>
+                
+                @for (var i = 0; i < Model.lsthobby1.Count; i++)
+                {
+                    <input type="checkbox" asp-for="@Model.lsthobby1[i].ischecked" /> 
+                    @Model.lsthobby1[i].hobbyname
+                    <input type="hidden" asp-for="@Model.lsthobby1[i].hobbyname" />
+                }
+
+                <span asp-validation-for="hobbies" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="@ViewBag.BT" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
+    
+    function BindState() {
+        
+        $.ajax({
+            url: '/EmployeeRegistration/GetState',
+            type: 'Get',
+            data: { A: $("#country").val() },
+            success: function (data) {
+                $("#state").empty();
+                $("#state").append($('<option></option>').html("--Select--").val(0));
+                for (var i = 0; i < data.length; i++) {
+                    $("#state").append($('<option></option>').html(data[i].statename).val(data[i].stateid));
+                }
+            },
+            error: function () {
+                alert('State Not Bind !!');
+                console.log(err);
+            }
+        });
+        
+    }
+
+
+
+    function BindCity() {
+        
+        $.ajax({
+            url: '/EmployeeRegistration/GetCity',
+            type: 'Get',
+            data: { A: $("#state").val() },
+            success: function (data) {
+                $("#city").empty();
+                $("#city").append($('<option></option>').html("--Select--").val(0));
+                for (var i = 0; i < data.length; i++) {
+                    $("#city").append($('<option></option>').html(data[i].cityname).val(data[i].cityid));
+                }
+            },
+            error: function () {
+                alert('city Not Bind !!');
+            }
+        });
+        
+    }
+
+</script>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
