@@ -1,6 +1,8 @@
 ﻿using EmployeeForm.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace EmployeeForm.Controllers
 {
@@ -47,7 +49,9 @@ namespace EmployeeForm.Controllers
                         }
                     }
                 }
-
+                obj.email = data[0].email;
+                obj.password = data[0].password;
+                obj.image = data[0].image;
 
                 ViewBag.BT = "Update";
             }
@@ -59,7 +63,7 @@ namespace EmployeeForm.Controllers
 
 
         [HttpPost]
-        public IActionResult AddEmployee(EmployeeAndCollection _eac)
+        public IActionResult AddEmployee(EmployeeAndCollection _eac, IFormFile file)
         {
             string kk = "";
             foreach (var a in _eac.lsthobby1)
@@ -71,7 +75,6 @@ namespace EmployeeForm.Controllers
             }
             kk = kk.TrimEnd(',');
 
-
             tblemployee _emp = new tblemployee();
             _emp.empid = _eac.empid;
             _emp.name = _eac.name;
@@ -81,13 +84,40 @@ namespace EmployeeForm.Controllers
             _emp.city = _eac.city;
             _emp.gender = _eac.gender;
             _emp.hobbies = kk;
+            _emp.email = _eac.email;
+            _emp.password = _eac.password;
+            _emp.image = _eac.image;
+            
 
             if (_emp.empid > 0)
             {
+                if(file != null) { 
+                    string FN = Path.GetFileName(file.FileName);
+
+                    using (FileStream fs = System.IO.File.Create(Path.Combine("wwwroot/EmployeePics", FN)))
+                    {
+                        file.CopyTo(fs);
+                        fs.Flush();
+                    }
+
+                    System.IO.File.Delete(Path.Combine("wwwroot/EmployeePics", _emp.image));
+
+                    _emp.image = FN;
+                }
                 _db.Entry(_emp).State = EntityState.Modified;
             }
             else
             {
+                string FN = Path.GetFileName(file.FileName);
+
+                using (FileStream fs = System.IO.File.Create(Path.Combine("wwwroot/EmployeePics", FN)))
+                {
+                    file.CopyTo(fs);
+                    fs.Flush();
+                }
+
+                _emp.image = FN;
+
                 _db.tblemployees.Add(_emp);
             }
 
@@ -99,6 +129,7 @@ namespace EmployeeForm.Controllers
         {
             var data = _db.tblemployees.Find(id);
             _db.tblemployees.Remove(data);
+            System.IO.File.Delete(Path.Combine("wwwroot/EmployeePics", data.image));
             _db.SaveChanges();
             return RedirectToAction("ShowEmployee");
         }
@@ -119,7 +150,10 @@ namespace EmployeeForm.Controllers
                             state = S.statename,
                             city = T.cityname,
                             gender = G.gendername,
-                            hobbies = E.hobbies
+                            hobbies = E.hobbies,
+                            email = E.email,
+                            password = E.password,
+                            image = E.image
                         }).ToList();
             return View(data);
         }

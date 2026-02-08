@@ -76,5 +76,6 @@ namespace EmployeeForm.Models
                 new tblhobby { hobbyid = 8, hobbyname = "Photography" }
             );
         }
+        
     }
 }

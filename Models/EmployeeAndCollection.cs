@@ -13,6 +13,9 @@ namespace EmployeeForm.Models
         public int city { get; set; }
         public int gender { get; set; }
         public int hobbies { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public string image { get; set; }
 
 
         public List<tblcountry> lstcountry { get; set; }

@@ -337,3 +337,4 @@ C:\Users\V\Desktop\Akash Singh\EmployeeForm\bin\Debug\net10.0\ru\Microsoft.CodeA
 C:\Users\V\Desktop\Akash Singh\EmployeeForm\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\V\Desktop\Akash Singh\EmployeeForm\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\V\Desktop\Akash Singh\EmployeeForm\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\V\Desktop\Akash Singh\EmployeeForm\obj\Debug\net10.0\EmployeeForm.sourcelink.json

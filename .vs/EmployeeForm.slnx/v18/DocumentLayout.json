@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\views\\employeeregistration\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:views\\employeeregistration\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\controllers\\employeelogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:controllers\\employeelogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\controllers\\employeeregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:controllers\\employeeregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\views\\employeelogin\\addlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:views\\employeelogin\\addlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\views\\home1\\addhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:views\\home1\\addhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|c:\\users\\v\\desktop\\akash singh\\employeeform\\controllers\\home1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A7643D1-7B03-1A75-4389-A5CCE2DD419F}|EmployeeForm.csproj|solutionrelative:controllers\\home1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Models\\DatabaseContext.cs",
-              "RelativeDocumentMoniker": "Models\\DatabaseContext.cs",
-              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Models\\DatabaseContext.cs",
-              "RelativeToolTip": "Models\\DatabaseContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AddHome.cshtml",
+              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Views\\Home1\\AddHome.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home1\\AddHome.cshtml",
+              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Views\\Home1\\AddHome.cshtml",
+              "RelativeToolTip": "Views\\Home1\\AddHome.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-07T16:15:48.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Views\\EmployeeLogin\\AddLogin.cshtml",
+              "RelativeDocumentMoniker": "Views\\EmployeeLogin\\AddLogin.cshtml",
+              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Views\\EmployeeLogin\\AddLogin.cshtml",
+              "RelativeToolTip": "Views\\EmployeeLogin\\AddLogin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-07T16:04:36.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home1.cs",
+              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Controllers\\Home1.cs",
+              "RelativeDocumentMoniker": "Controllers\\Home1.cs",
+              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Controllers\\Home1.cs",
+              "RelativeToolTip": "Controllers\\Home1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T07:08:07.257Z",
+              "WhenOpened": "2026-02-07T16:10:26.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeLoginController.cs",
+              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Controllers\\EmployeeLoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeLoginController.cs",
+              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Controllers\\EmployeeLoginController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeLoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:44:11.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeRegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Controllers\\EmployeeRegistrationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeRegistrationController.cs",
+              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Controllers\\EmployeeRegistrationController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeRegistrationController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAALAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:08:46.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEmployee.cshtml",
+              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Views\\EmployeeRegistration\\AddEmployee.cshtml",
+              "RelativeDocumentMoniker": "Views\\EmployeeRegistration\\AddEmployee.cshtml",
+              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Views\\EmployeeRegistration\\AddEmployee.cshtml",
+              "RelativeToolTip": "Views\\EmployeeRegistration\\AddEmployee.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T14:16:07.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\V\\Desktop\\Akash Singh\\EmployeeForm\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T16:19:39.204Z",
               "EditorCaption": ""
             }
           ]

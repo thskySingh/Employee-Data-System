@@ -9,9 +9,10 @@
 <h4>EmployeeAndCollection</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="AddEmployee">
+    <div class="col-md-4" >
+        <form asp-action="AddEmployee" method="post" enctype="multipart/form-data">
             @Html.HiddenFor(m => m.empid)
+            @Html.HiddenFor(m => m.image)
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
@@ -82,6 +83,24 @@
             </div>
 
             <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="password" class="control-label"></label>
+                <input asp-for="password" class="form-control" />
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="image" class="control-label"></label>
+                <input type="file" name="file" class="form-control" />
+                <span asp-validation-for="image" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
                 <input type="submit" value="@ViewBag.BT" class="btn btn-primary" />
             </div>
         </form>
@@ -107,7 +126,6 @@
             },
             error: function () {
                 alert('State Not Bind !!');
-                console.log(err);
             }
         });
         
