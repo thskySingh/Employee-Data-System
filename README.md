@@ -1,3 +1,10 @@
+## What I Learned
+- CRUD operations with ASP.NET Core MVC
+- Entity Framework Code-First approach
+- Authentication & authorization
+- Writing clean controllers and views
+
+
 # Employee Data System
 
 A web application for managing employee information — built with **ASP.NET Core MVC** and **Entity Framework Core** using the **Code‑First** approach and **MS SQL Server** database.
